@@ -85,7 +85,7 @@ class MatelasController extends Controller
 
         $request->validate([
             'name' => 'required|min:2',
-            'brand' => 'required|min:5|max:20',
+            'brand' => 'required|min:0|max:20',
             'price' => 'required|integer|min:100|max:1000',
             'discount' => 'nullable|integer|min:10|max:90',
             'height' => 'required|min:6|max:7',
