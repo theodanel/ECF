@@ -1,10 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="md:flex items-center gap-6">
-        <img class="w-full md:w-64 mb-12 md:mb-0 shadow-lg" src="{{ $matela->image }}" alt="{{ $matela->name }}">
-        <div class ="">
-            <a href="/" class="text-gray-500 flex gap-2 mb-3">
+<div>
+   
+
+    <div class="md:flex items-center gap-6 h-full">
+        <div class=" h-full w-1/2">
+        <img class="  shadow-lg w-full" src="{{ $matela->image }}" alt="{{ $matela->name }}">
+        </div>
+        <div class ="w-1/2  h-full">
+            <a href="/" class="text-gray-500 flex gap-2 mb-3 hover:underline">
                 Retour aux matelas
             </a>
             <h1 class="text-5xl font-bold text-gray-900 mb-3">{{ $matela->name }}</h1>

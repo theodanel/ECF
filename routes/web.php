@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BrandsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MatelasController;
 use App\Models\Matela;
@@ -23,5 +24,6 @@ Route::get('create', [MatelasController::class, 'create']);
 Route::post('create', [MatelasController::class, 'store']);
 Route::get('{id}/modifier', [MatelasController::class, 'edit']);
 Route::post('{id}/modifier', [MatelasController::class, 'update']);
-
 Route::get('{id}/supprimer', [MatelasController::class, 'destroy']);
+
+Route::get('/brands', [BrandsController::class, 'index']);

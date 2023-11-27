@@ -31,7 +31,7 @@ class MatelasController extends Controller
             'price' => 'required|integer|min:100|max:1000',
             'discount' => 'nullable|integer|min:10|max:90',
             'height' => 'required|min:6|max:7',
-            'image' => 'required|url',
+            'image' => 'required',
         ]);
 
         $matela = new Matela();
@@ -41,6 +41,13 @@ class MatelasController extends Controller
         $matela->discount = $request->discount;
         $matela->height = $request->height;
         $matela->image = $request->image;
+        
+        // if ($request->hasFile('image')) {
+        //     $imageName = time().'.'.$request->image->extension();
+        //     $request->image->move(public_path('images'), $imageName);
+        //     $matela->image = $imageName;
+        // }
+
         $matela->save();
 
         return redirect('/');

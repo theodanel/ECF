@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        $matelas = Matela::factory()->create([
+        $matela = Matela::factory()->create([
             'name' => 'Matelas Confort',
             'brand' => 'EPEDA',
             'price' => 529,

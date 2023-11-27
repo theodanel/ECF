@@ -19,7 +19,7 @@
             <label for="brand" class="block">Marque</label>
             <input type="text" name="brand" id="brand" value="{{ old('brand') }}" class="rounded shadow border-gray-300 w-full">
             @error('brand')
-                <div class="text-red-500">{{ $message }}</div>  
+                <div class="text-red-500">{{ $message }}</div>
             @enderror
         </div>
 
