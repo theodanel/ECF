@@ -17,7 +17,12 @@
 
         <div class="mb-3">
             <label for="brand" class="block">Marque</label>
-            <input type="text" name="brand" id="brand" value="{{ old('brand') }}" class="rounded shadow border-gray-300 w-full">
+            <select name="brand" id="brand" class="my-2 py-2 px-2 border-2 rounded-lg border-[bg-slate-50] w-full">
+                @foreach ($brands as $brand)
+                    <option @selected($brand->id == old('brand')) value="{{ $brand->id }}">{{ $brand->name }}</option>
+                    @endforeach
+                </select>
+                
             @error('brand')
                 <div class="text-red-500">{{ $message }}</div>
             @enderror

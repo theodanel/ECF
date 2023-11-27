@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Brand;
 use App\Models\Matela;
 use Illuminate\Http\Request;
 
@@ -17,8 +18,8 @@ class MatelasController extends Controller
     public function create()
     { 
         return view('create', [
-            'brand' => ['EPEDA', 'DREAMWAY', 'BULTEX', 'DORSOLINE', 'MEMORYLINE'],
             'matelas' => Matela::all(),
+            'brands' => Brand::all(),
 
         ]);
     }

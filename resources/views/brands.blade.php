@@ -9,10 +9,10 @@
     <h1 class="h-1/2 text-3xl text-center mb-8">Liste des marques :</h1>
 </div>
 
-    <div class="w-full">
+    <div class="w-full flex row flex-wrap">
         <hr>
         @foreach ($brands as $brand)
-            <div class="w-full">
+            <div class="w-1/2 ">
                 <div class="flex flex-col justify-between w-1/2 h-1/2">
                        
                                 <h1 class="py-2 text-center text-3xl">{{ $brand->name }}</h1>
