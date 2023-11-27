@@ -27,12 +27,7 @@
 
     <footer class="py-8">
         <div class="max-w-5xl mx-auto px-3">
-            <p class="text-center text-xl">
-                <ul>
-                    <li><h2> Vous y découvrirez toutes nos dimensions</h2></li>
-                    <li></li>
-                    <li></li>
-                </ul> &copy; {{ date('Y') }}</p>
+            DodoMatelas &copy; {{ date('Y') }}</p>
         </div>
     </footer>
 </body>

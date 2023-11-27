@@ -30,6 +30,10 @@
         @endforeach
     </div>
 
-    <p class="text-lg text-center mb-3 font-bold ">Suite du catalogue en page 2...</p> 
+    <p class="text-lg text-center mt-12 font-bold mb-12 ">Suite du catalogue en page 2...</p> 
+    <p class="text-lg text-center font-bold ">Vous y découvrirez toutes nos dimensions : </p> 
+    <p class="text-center mb-3 ">90x190, 140x190, 160x200, 180x200, 200x200 </p> 
+    <p class="text-lg text-center font-bold ">et toutes nos marques de matelas : </p> 
+    <p class="text-center mb-3 ">Epeda, Dreamway, Bultex, Dorsoline, MemoryLine </p> 
 
 @endsection

@@ -19,6 +19,7 @@ class MatelasController extends Controller
         return view('create', [
             'brand' => ['EPEDA', 'DREAMWAY', 'BULTEX', 'DORSOLINE', 'MEMORYLINE'],
             'matelas' => Matela::all(),
+
         ]);
     }
 
@@ -61,7 +62,11 @@ class MatelasController extends Controller
 
         $matela = Matela::findOrFail($id);
 
-        return view('edit'); 
+        return view('edit' , [
+            'matelas' => Matela::all(),
+            'matelas' => $matela,
+        ]); 
+
     }
 
     public function update(Request $request, $id)
