@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MatelasController;
+use App\Models\Matela;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,8 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('create', [HomeController::class, 'create']);
+Route::get('create', [MatelasController::class, 'create']);
+Route::post('create', [MatelasController::class, 'store']);
