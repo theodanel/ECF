@@ -71,8 +71,9 @@ class MatelasController extends Controller
         $matela = Matela::findOrFail($id);
 
         return view('edit' , [
-            'matelas' => Matela::all(),
-            'matelas' => $matela,
+            'matela' => $matela,
+            'brands' => Brand::all(),
+   
         ]); 
 
     }
