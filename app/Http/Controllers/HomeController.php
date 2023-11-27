@@ -14,6 +14,13 @@ class HomeController extends Controller
         ]);
     }
 
+    public function show($id)
+    {
+        $matela = Matela::findOrFail($id); // Select * from movie where id = :id OU 404
+
+        return view('show', ['matela' => $matela]);
+    }
+
     public function create()
     {
         return view('create');

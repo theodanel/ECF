@@ -17,6 +17,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('matela/{id}', [MatelasController::class, 'show']);
 
 Route::get('create', [MatelasController::class, 'create']);
 Route::post('create', [MatelasController::class, 'store']);
+Route::get('{id}/modifier', [MatelasController::class, 'edit']);
+Route::post('{id}/modifier', [MatelasController::class, 'update']);
+
+Route::get('{id}/supprimer', [MatelasController::class, 'destroy']);

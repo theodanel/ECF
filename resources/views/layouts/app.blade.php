@@ -8,20 +8,18 @@
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
 </head>
 <body class="font-[Nunito] flex flex-col justify-between h-screen">
-    <div class="bg-blue-800 text-blue-300 py-8 shadow-xl w-42 ">
-        <div class="w-full text-center mx-auto px-3 flex text-center contents">
-            <div class="flex justify-between items-center h-full ">
-                <h1 class="text-2xl">
-                    <a href="/">Literie3000</a>
-                </h1>
-           <nav class="space-x-3">
-                    <a class="hover:underline underline-offset-8" href="/">Accueil</a>
-                    <a class="hover:underline underline-offset-8" href="/create">Ajoutez un matelas</a>
 
-                </nav>
+        <div class="w-1/2 text-center mx-auto px-3 flex text-center contents">
+            <div class="flex items-center h-full justify-center">
+                <img src="{{ asset('images/logo.png') }}" alt="">
             </div>
         </div>
-    </div>
+        <nav class="space-x-3">
+                 <a class="hover:underline underline-offset-8 text-blue-700 text-2xl flex items-center h-full justify-center" href="/">Accueil</a>
+                
+
+             </nav>
+
 
     <div class="max-w-5xl mx-auto px-3 py-8 w-full ">
         @yield('content')
